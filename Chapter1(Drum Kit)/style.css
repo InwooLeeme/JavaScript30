@@ -35,3 +35,9 @@ body {
   font-weight: 300;
   font-size: 2rem;
 }
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
