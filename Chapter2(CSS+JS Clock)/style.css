@@ -16,6 +16,9 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 100%;
   border: 1rem solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clockCenter {
@@ -24,4 +27,23 @@ body {
   position: absolute;
   background-color: #ffffff;
   border-radius: 100%;
+}
+
+.hands {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 400px;
+  height: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: rotate(90deg);
+  transform-origin: 100%;
+}
+
+.hands:nth-child(1) {
+  transform: rotate(110deg);
+}
+
+.hands:nth-child(3) {
+  transform: rotate(130deg);
 }
