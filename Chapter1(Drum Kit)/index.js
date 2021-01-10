@@ -5,7 +5,10 @@ function handleKeyDown(event){
     const audio = document.querySelector(`audio[data-key="${currentKeyCode}"]`);
     audio.currentTime = 0;
     audio.play();
-    
+    kit.classList.add('playing');
+    setTimeout(() => {
+        kit.classList.remove('playing');
+    }, 3000);
 }
 
 function init(){
