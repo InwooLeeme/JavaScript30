@@ -8,7 +8,9 @@ function getCurrentTime(){
     const date = new Date();
     const hour = date.getHours();
     const minute = date.getMinutes();
-    const second = date.getSeconds();
+    const seconds = date.getSeconds();
+    const transSecDeg = (seconds * 6) + 90;
+    secondBar.style.transform = `rotate(${transSecDeg}deg)`;
 }
 
 function init(){
