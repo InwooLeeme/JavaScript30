@@ -11,8 +11,14 @@ function handleSpace(){
     image.style.margin = `${parseInt(currentSpace)}px`;
 }
 
+function handleBlurStyle(){
+    const currentInputValue = blurController.value;
+    
+}
+
 function init(){
     spaceController.addEventListener('change', handleSpace);
+    blurController.addEventListener('change',handleBlurStyle);
 }
 
 init();
