@@ -1,1 +1,29 @@
 @import "./reset.css";
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: #193549;
+  color: #ffffff;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+.controller {
+  margin: 0.5rem 0;
+}
+
+img {
+  margin-top: 2.5rem;
+}
+
+input {
+  width: 100px;
+}
