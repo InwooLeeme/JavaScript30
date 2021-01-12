@@ -139,11 +139,11 @@ const result5 = inventors.sort((a, b) => a.passed - b.year);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the
 // name https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-
+/* 
 const category = document.querySelector('.mw-category');
 const link = Array.from(category.querySelectorAll('a'));
 const de = link.map(link => link.textContent).filter(link => link.includes('de'));
-console.table(de);
+console.table(de); */
 
 //7. Sort the people alphabetically by last name
 
@@ -155,7 +155,7 @@ const result6 = inventors.sort((a,b) => {
         return -1;
     }
 });
-console.table(result6);
+//console.table(result6);
 
 //8. Sum up the instances of each of these
 const data = [
@@ -174,3 +174,14 @@ const data = [
     'car',
     'truck'
 ];
+
+const result8 = data.reduce(function(obj, item){
+    /* console.log(obj);
+    console.table(item); */
+    if(!obj[item]){
+        obj[item] = 0;
+    }
+    obj[item]++;
+    return obj;
+},{});
+console.log(result8);
